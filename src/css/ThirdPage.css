@@ -1,34 +1,47 @@
 .container {
-    display: flex;
-    flex-direction: column; /* This will align the child elements (ThirdPage and buttonContainer) in a column */
-    min-height: 100vh; /* This will make sure the container takes at least the full height of the viewport */
-  }
-  
-  .ThirdPage {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  .ThirdPage img {
-    width: 60%;
-    height: auto;
-    margin: 20px;
-    padding: 10px;
-  }
-  
-  .ThirdPage h1 {
-    width: 30%;
-    text-align: left;
-    margin: 30px;
-    padding: 10px;
-  }
-  
-  .buttonContainer {
-    margin-top: auto; /* This will push the button container to the bottom */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-left: 45px;
-  }
-  
+  display: flex;
+  flex-direction: column; 
+  min-height: 60vh; 
+  align-items: center; /* Center align the items vertically */
+  justify-content: center; /* Center align the items horizontally */
+}
+
+.ThirdPage {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: space-around;
+  width: 90%; 
+  margin: auto; 
+  padding-left: 60px;
+  padding-top: 25px;
+}
+
+.ThirdPage img {
+  width: 60%;
+  height: auto;
+  margin: 20px;
+  padding: 10px;
+  object-fit: contain; /* Ensure the image scales properly */
+}
+
+.ThirdPage h2 {
+  width: 100%; /* Allow the heading to take the full width */
+  text-align: center; /* Center align the text */
+  margin: 30px;
+  padding: 10px;
+}
+
+.buttonContainer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 0; /* Remove the left margin */
+}
+
+.backButton {
+  position: absolute;
+    top: 18px;
+    left: 0;
+}

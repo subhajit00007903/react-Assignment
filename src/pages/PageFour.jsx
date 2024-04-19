@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import ProgressBar from '../pages/ProgressBar';
+
 import '../css/PageFour.css';
 
-const options = ['Introductory\nArithmetic', 'Pre-Algebra', 'Algebra', 'Geometry'];
+const options = ['5 x 1/2 = ? \nIntroductory\nArithmetic', '3x +5 = ?\nPre-Algebra', 'x=2a−b±b2−4ac​​\nAlgebra', '\nGeometry'];
 
 function PageFour() {
   const [selectedOption, setSelectedOption] = useState(null);
+  const [progress, setProgress] = useState(80); // Set initial progress to 57.1428
   const navigate = useNavigate();
 
   const handleOptionClick = (option) => {
@@ -13,11 +16,18 @@ function PageFour() {
   };
 
   const handleContinueClick = () => {
+    setProgress(progress + 30); 
     navigate('/five');
+  };
+
+  const handleBackClick = () => {
+    navigate(-1); 
   };
 
   return (
     <div className="PageFour">
+      <button className="backButton" onClick={handleBackClick}>🠔</button> 
+      <ProgressBar progress={progress} /> 
       <h1>What is your comfort level with math?</h1>
       
       <div className="options">

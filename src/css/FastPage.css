@@ -6,31 +6,36 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left:  50px;
+  padding-left:  80px; /* Changed from 50px to 80px */
+  padding-top: 25px; /* Added this line */
 }
 
 .FastPage .options {
   display: flex;
-  flex-direction: column !important; /* Options will be displayed in a single column */
+  flex-direction: column;
+  justify-content: space-around; /* Added this line */
   margin: 20px 0;
-  width: 300px;
-  max-width: 100%; /* Set the maximum width to 100% */
+  width: 80%; /* Changed from 300px to 80% */
+  max-width: 100%;
   margin: auto;
 }
 
 .FastPage .option {
+  display: flex; 
+  align-items: center; 
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 10px; /* For rounded borders */
+  border-radius: 10px;
   cursor: pointer;
-  margin-bottom: 10px; /* Add this for space between options */
+  margin-bottom: 10px;
 }
 
 .FastPage .option img {
-  margin-right: 100px;
-  padding-left: 60px; 
+  margin-right: 10px; 
+  padding-left: 30px;
   width: 30px;
 }
+
 
 .FastPage .option.selected {
   background-color: #f0d27f;
@@ -39,4 +44,10 @@
 .FastPage button:disabled {
   background-color: #7a7a78;
   cursor: not-allowed;
+}
+
+.backButton {
+  position: absolute;
+  top: 18px;
+  left: 0;
 }

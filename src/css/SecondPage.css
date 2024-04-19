@@ -1,39 +1,54 @@
 /* css/FastPage.css */
 
 .SecondPage {
-    text-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left:  80px;
-  }
-  
-  .SecondPage .options {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 20px 0;
-    width: 80%;
-    margin: auto;
-  }
-  
-  .SecondPage .option {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px; /* For rounded borders */
-    cursor: pointer;
-    margin-bottom: 10px; /* Add this for space between options */
-  }
-  .SecondPage .option img {
-    margin-right: 10px; /* Add this for space between image and text */
-  }
-  .SecondPage .option.selected {
-    background-color: #f0d27f;
-  }
-  
-  .SecondPage button:disabled {
-    background-color: #7a7a78;
-    cursor: not-allowed;
-  }
-  
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left:  80px;
+  padding-top: 25px;
+}
+
+.SecondPage .options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px 0;
+  width: 80%;
+  margin: auto;
+}
+
+.SecondPage .option {
+  display: flex; 
+  align-items: center; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.SecondPage .option img {
+  margin-right: 10px; 
+  padding-left: 30px;
+  width: 30px;
+}
+.SecondPage .option.selected {
+  background-color: #f0d27f;
+}
+
+.SecondPage button:disabled {
+  background-color: #7a7a78;
+  cursor: not-allowed;
+}
+
+
+
+.backButton {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  background-color: white; 
+  color: black; 
+   
+}

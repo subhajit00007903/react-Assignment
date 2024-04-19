@@ -1,9 +1,9 @@
 .PageSeven {
     display: flex;
-    justify-content: space-around; /* Distributes boxes evenly in the container */
+    justify-content: space-around; 
     padding: 20px;
     text-align: center;
-    flex-wrap: wrap; /* Allows the boxes to wrap onto the next line if there isn't enough space */
+    flex-wrap: wrap; 
 }
 
 .path {
@@ -15,7 +15,7 @@
     padding: 20px;
     width: 30%;
     margin: 10px;
-    position: relative;
+    position: relative; /* This allows absolute positioning inside the path */
 }
 
 .banner {
@@ -28,22 +28,17 @@
     top: 10px; 
     right: 10px; 
     font-weight: bold; 
-     
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-size: cover; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: orange;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .image-section {
-    width: 100%; /* Takes the full width of the .path container */
-    height: auto; /* Maintains the aspect ratio of the image */
+    width: 100%; 
+    height: auto; 
 }
